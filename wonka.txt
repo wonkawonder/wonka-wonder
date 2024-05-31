@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonka Wonder</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #6a0dad;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #6a0dad;
+        }
+        .container {
+            padding: 2em;
+        }
+        .products, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .product, .testimonial {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1em;
+            flex: 1 1 calc(33% - 2em);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #6a0dad;
+            color: #fff;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #8a2be2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wonka Wonder</h1>
+    <p>Bonbons طبيعية بالكامل بألوان وأشكال مبتكرة</p>
+</header>
+
+<nav>
+    <a href="#home">الصفحة الرئيسية</a>
+    <a href="#about">عنّا</a>
+    <a href="#products">المنتجات</a>
+    <a href="#custom-orders">الطلبات الخاصة</a>
+    <a href="#testimonials">الشهادات</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<div id="home" class="container">
+    <h2>مرحبًا بكم في Wonka Wonder!</h2>
+    <p>استمتعوا بألذ البونبون المصنوعة من المكونات الطبيعية بالكامل وبأشكال وألوان مبتكرة تلهم الخيال.</p>
+</div>
+
+<div id="about" class="container">
+    <h2>عنّا</h2>
+    <p>مشروع "Wonka Wonder" مستوحى من عالم ويلي ونكا، نقدم لكم بونبون طبيعي بالكامل وبألوان وأشكال مبتكرة. نؤمن بأن الحلوى يمكن أن تكون صحية وجذابة في آن واحد.</p>
+</div>
+
+<div id="products" class="container">
+    <h2>المنتجات</h2>
+    <div class="products">
+        <div class="product">
+            <h3>بونبون الفاكهة الملونة</h3>
+            <p>مصنوع من الفواكه الطبيعية وبألوان جذابة.</p>
+        </div>
+        <div class="product">
+            <h3>بونبون الشوكولاتة البيضاء</h3>
+            <p>مصنوع من الشوكولاتة البيضاء النقية والألوان الطبيعية.</p>
+        </div>
+        <div class="product">
+            <h3>بونبون الزهور الطبيعية</h3>
+            <p>مستوحى من أشكال الزهور وبنكهات الزهور الطبيعية.</p>
+        </div>
+    </div>
+</div>
+
+<div id="custom-orders" class="container">
+    <h2>الطلبات الخاصة</h2>
+    <p>نحن نقبل الطلبات الخاصة للمناسبات والحفلات. الرجاء ملء النموذج التالي لتقديم طلبك الخاص:</p>
+    <form class="contact-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="تفاصيل الطلب" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</div>
+
+<div id="testimonials" class="container">
+    <h2>الشهادات</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <p>"أفضل بونبون جربته على الإطلاق! ألوان ونكهات مذهلة." - عميل سعيد</p>
+        </div>
+        <div class="testimonial">
+            <p>"الطلب الخاص لحفلتنا كان رائعاً! شكراً لفريق Wonka Wonder." - عميل مسرور</p>
+        </div>
+        <div class="testimonial">
+            <p>"حلوى صحية ولذيذة، أحببتها كثيراً." - عميل راضٍ</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="container">
+    <h2>اتصل بنا</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+    <p>تابعونا على وسائل التواصل الاجتماعي:</p>
+    <p>
+        <a href="#">فيسبوك</a> | 
+        <a href="#">تويتر</a> | 
+        <a href="#">إنستغرام</a>
+    </p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Wonka Wonder. جميع الحقوق محفوظة.</p>
+</footer>
+
+</body>
+</html>
